@@ -100,7 +100,7 @@ def main():
                 summary, title = fetch_and_summarize_content(url)
 
             if not summary:
-                log.error(
+                st.error(
                     "Unable to summarize website content. Please check the URL and try again."
                 )
                 return
