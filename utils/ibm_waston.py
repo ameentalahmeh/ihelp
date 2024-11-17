@@ -15,7 +15,7 @@ from utils.logger import get_logger
 log = get_logger(__name__)
 
 # IBM Watson Assistant Credentials
-API_KEY = os.getenv("ASSISTANT_IAM_APIKEY")  # Fetch from .env file
+API_KEY = os.getenv("ASSISTANT_APIKEY")  # Fetch from .env file
 SERVICE_URL = os.getenv("ASSISTANT_URL")  # Fetch from .env file
 
 # Check if environment variables are loaded correctly
