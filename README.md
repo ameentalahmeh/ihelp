@@ -84,14 +84,19 @@ iHelp uses IBM Watson AI, TogetherAI, and Llama 3.2 to generate:
 
 ## **Getting Started**  
 
-### **Step 1: Set Up a Virtual Environment**  
+### **Step 1: Set Up a Virtual Environment**
 
-1. Create a virtual environment:  
+1. Clone repo
+   ```bash
+   git clone git@github.com:ameentalahmeh/ihelp.git
+   ```
+
+2. Create a virtual environment:  
    ```bash
    python -m venv .venv
    ```  
 
-2. Activate the virtual environment:  
+3. Activate the virtual environment:  
    - On Windows:  
      ```bash
      .venv\Scripts\activate
@@ -101,7 +106,7 @@ iHelp uses IBM Watson AI, TogetherAI, and Llama 3.2 to generate:
      source .venv/bin/activate
      ```  
 
-3. Install the required libraries:  
+4. Install the required libraries:  
    ```bash
    pip install -r requirements.txt
    ```  
