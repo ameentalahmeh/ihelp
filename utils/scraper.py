@@ -58,7 +58,7 @@ def scrape_website_recursive(
 
     try:
         # Make a GET request to fetch the content of the page
-        response = requests.get(url, timeout=10)
+        response = requests.get(url, timeout=10, verify=False)
         if response.status_code != 200:
             log.error(
                 f"Failed to fetch URL: {url}. Status code: {response.status_code}"
