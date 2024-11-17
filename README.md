@@ -132,25 +132,25 @@ iHelp uses IBM Watson AI, TogetherAI, and Llama 3.2 to generate:
 ### 1. **Homepage**  
 User-friendly dashboard to guide you through creating your assistant.  
 
-![Homepage](/sceenshots/home-view.jpeg)  
+![Homepage](/screenshots/home-view.jpeg)  
 
 
 ### 2. **Enter Website URL**  
 Simple input box to scan your website for relevant content.  
 
-![fetching-and-summarizing](/sceenshots/fetching-and-summarizing.jpeg)  
+![fetching-and-summarizing](/screenshots/fetching-and-summarizing.jpeg)  
 
 
 ### 3. **Content Summarization**  
 View and edit the summarized content extracted from your website.  
 
-![Summarization](/sceenshots/content-document.jpeg)  
+![Summarization](/screenshots/content-document.jpeg)  
 
 
 ### 4. **Generate Workspace**  
 Real-time creation of Watson Assistant Workspace JSON.  
 
-![Generate Workspace](/sceenshots/workspace-create.jpeg)  
+![Generate Workspace](/screenshots/workspace-create.jpeg)  
 
 
 ### 5. **Download Assistant JSON**  
