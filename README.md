@@ -103,7 +103,7 @@ iHelp uses IBM Watson AI, TogetherAI, and Llama 3.2 to generate:
 
 3. Install the required libraries:  
    ```bash
-   pip install streamlit ibm-watson ibm_cloud_sdk_core llama-index python-dotenv bs4 tldextract urllib3
+   pip install -r requirements.txt
    ```  
 
 
@@ -132,28 +132,39 @@ iHelp uses IBM Watson AI, TogetherAI, and Llama 3.2 to generate:
 ### 1. **Homepage**  
 User-friendly dashboard to guide you through creating your assistant.  
 
-![Homepage](#)  
+![Homepage](/sceenshots/home-view.jpeg)  
 
 
 ### 2. **Enter Website URL**  
 Simple input box to scan your website for relevant content.  
 
-![Enter URL](#)  
+![fetching-and-summarizing](/sceenshots/fetching-and-summarizing.jpeg)  
 
 
 ### 3. **Content Summarization**  
 View and edit the summarized content extracted from your website.  
 
-![Summarization](#)  
+![Summarization](/sceenshots/content-document.jpeg)  
 
 
 ### 4. **Generate Workspace**  
 Real-time creation of Watson Assistant Workspace JSON.  
 
-![Generate Workspace](#)  
+![Generate Workspace](/sceenshots/workspace-create.jpeg)  
 
 
 ### 5. **Download Assistant JSON**  
-Export your assistant configuration as a `.json` file.  
+Export the generated Watson Assistant Workspace configuration as a `.json` file. This file contains all the intents, actions, and settings required to set up your assistant.  
 
-![Download JSON](#)
+![Download JSON Workspace](/screenshots/workspace-json-complete.jpeg)
+
+
+### 6. **View Sample Assistant JSON**  
+Preview a sample of the Watson Assistant Workspace JSON file to understand the structure and details, including intents, actions, and responses. This gives you an idea of the generated content before deployment.  
+
+![Sample Assistant JSON](/screenshots/workspace-json.jpeg)
+
+### 7. **Test the Assistant**  
+Load the exported Workspace JSON into Watson Assistant and test your assistant in a real-world environment. Interact with it to ensure it responds accurately to user queries and meets your business needs.  
+
+![Test Assistant](/screenshots/test-assistant-uses-workspace.jpeg)
