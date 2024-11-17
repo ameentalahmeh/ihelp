@@ -1,5 +1,6 @@
 import os
 import json
+import warnings
 import streamlit as st
 from dotenv import load_dotenv
 from utils.logger import get_logger
@@ -20,6 +21,8 @@ load_dotenv()
 
 # Initialize the logger
 log = get_logger(__name__)
+
+warnings.filterwarnings("ignore")
 
 
 def display_summary(summary, title):
