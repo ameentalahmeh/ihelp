@@ -1,0 +1,17 @@
+[
+    {
+        "action_name": "action_greeting",
+        "conditions": "#greeting",
+        "output_text": "Hello! How can I assist you today?"
+    },
+    {
+        "action_name": "action_thanks",
+        "conditions": "#thanks",
+        "output_text": "You're welcome! Let me know if you need anything else."
+    },
+    {
+        "action_name": "action_goodbye",
+        "conditions": "#goodbye",
+        "output_text": "Goodbye! Have a great day."
+    }
+]

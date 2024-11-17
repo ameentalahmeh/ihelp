@@ -1,0 +1,327 @@
+{
+  "intents": [
+    {
+      "intent": "company_history",
+      "description": "Information about the company's background and history",
+      "examples": [
+        {
+          "text": "What is the history of your company?"
+        },
+        {
+          "text": "When was the company founded?"
+        },
+        {
+          "text": "How did your company start?"
+        },
+        {
+          "text": "Tell me about the company's founding."
+        },
+        {
+          "text": "Can you provide an overview of the company's background?"
+        },
+        {
+          "text": "Where did the company originate?"
+        },
+        {
+          "text": "What was the inspiration behind starting the company?"
+        }
+      ]
+    },
+    {
+      "intent": "company_overview",
+      "description": "General overview of the company, including its purpose, products, or services",
+      "examples": [
+        {
+          "text": "Give me an overview of your company."
+        },
+        {
+          "text": "What does your company do?"
+        },
+        {
+          "text": "Can you describe your company?"
+        },
+        {
+          "text": "What are your company's main products or services?"
+        },
+        {
+          "text": "What is your company's main focus?"
+        },
+        {
+          "text": "Can you tell me more about your company?"
+        }
+      ]
+    },
+    {
+      "intent": "mission_and_values",
+      "description": "Information about the company's mission and the values it adheres to",
+      "examples": [
+        {
+          "text": "What is your company's mission?"
+        },
+        {
+          "text": "What values does your company follow?"
+        },
+        {
+          "text": "What principles guide your company?"
+        },
+        {
+          "text": "Can you share your company's mission statement?"
+        },
+        {
+          "text": "What does your company stand for?"
+        },
+        {
+          "text": "How does your company align with its values?"
+        }
+      ]
+    },
+    {
+      "intent": "services_offered",
+      "description": "Details of services provided by the company",
+      "examples": [
+        {
+          "text": "What services do you provide?"
+        },
+        {
+          "text": "Tell me about your solutions."
+        },
+        {
+          "text": "What do you offer?"
+        },
+        {
+          "text": "Can you list your services?"
+        },
+        {
+          "text": "What can you help me with?"
+        }
+      ]
+    },
+    {
+      "intent": "contact_details",
+      "description": "Contact information for the company",
+      "examples": [
+        {
+          "text": "How can I contact you?"
+        },
+        {
+          "text": "What is your email or phone number?"
+        },
+        {
+          "text": "Can I get your address?"
+        },
+        {
+          "text": "Where are you located?"
+        },
+        {
+          "text": "How do I reach customer support?"
+        }
+      ]
+    },
+    {
+      "intent": "careers",
+      "description": "Information about careers and job opportunities",
+      "examples": [
+        {
+          "text": "Do you have job openings?"
+        },
+        {
+          "text": "How can I apply for a job?"
+        },
+        {
+          "text": "Are you hiring?"
+        },
+        {
+          "text": "What positions are available?"
+        },
+        {
+          "text": "Where can I submit my resume?"
+        }
+      ]
+    },
+    {
+      "intent": "greeting",
+      "description": "User greets the assistant",
+      "examples": [
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hi"
+        },
+        {
+          "text": "Hey there"
+        },
+        {
+          "text": "Good morning"
+        },
+        {
+          "text": "Good afternoon"
+        },
+        {
+          "text": "Good evening"
+        }
+      ]
+    },
+    {
+      "intent": "thanks",
+      "description": "User thanks the assistant",
+      "examples": [
+        {
+          "text": "Thank you"
+        },
+        {
+          "text": "Thanks"
+        },
+        {
+          "text": "Much appreciated"
+        },
+        {
+          "text": "I appreciate it"
+        },
+        {
+          "text": "Thanks a lot"
+        }
+      ]
+    },
+    {
+      "intent": "goodbye",
+      "description": "User says goodbye",
+      "examples": [
+        {
+          "text": "Goodbye"
+        },
+        {
+          "text": "See you later"
+        },
+        {
+          "text": "Bye"
+        },
+        {
+          "text": "Catch you later"
+        },
+        {
+          "text": "Take care"
+        }
+      ]
+    },
+    {
+      "intent": "name",
+      "description": "The name of the company",
+      "examples": [
+        {
+          "text": "What is your company name?"
+        },
+        {
+          "text": "What is the name of your company?"
+        },
+        {
+          "text": "Can you tell me your company's name?"
+        }
+      ]
+    },
+    {
+      "intent": "description",
+      "description": "A brief description of the company",
+      "examples": [
+        {
+          "text": "Can you describe your company?"
+        },
+        {
+          "text": "What does your company do?"
+        },
+        {
+          "text": "Can you give me a brief overview of your company?"
+        }
+      ]
+    },
+    {
+      "intent": "cookie_policy",
+      "description": "Information about the company's cookie policy",
+      "examples": [
+        {
+          "text": "What is your cookie policy?"
+        },
+        {
+          "text": "Do you use cookies on your website?"
+        },
+        {
+          "text": "Can you tell me about your cookie policy?"
+        }
+      ]
+    }
+  ],
+  "entities": [],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018:11:14"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "action_name": "action_greeting",
+      "conditions": "#greeting",
+      "output_text": "Hello! How can I assist you today?"
+    },
+    {
+      "action_name": "action_thanks",
+      "conditions": "#thanks",
+      "output_text": "You're welcome! Let me know if you need anything else."
+    },
+    {
+      "action_name": "action_goodbye",
+      "conditions": "#goodbye",
+      "output_text": "Goodbye! Have a great day."
+    },
+    {
+      "action_name": "action_name",
+      "conditions": "#name",
+      "output_text": "Our company name is Jaffa.Net Software."
+    },
+    {
+      "action_name": "action_description",
+      "conditions": "#description",
+      "output_text": "Jaffa.Net Software is a software development outsourcing company with over 25 years of experience serving world-class companies in the USA, UK, Germany, Netherlands, Saudi Arabia, Jordan, and Qatar."
+    },
+    {
+      "action_name": "action_company_history",
+      "conditions": "#company_history",
+      "output_text": "Jaffa.Net Software was established with a vision to provide high-quality software development outsourcing services to clients worldwide. Over the years, they have developed a strong reputation for delivering innovative solutions that meet the needs of their clients."
+    },
+    {
+      "action_name": "action_company_overview",
+      "conditions": "#company_overview",
+      "output_text": "Jaffa.Net Software provides a comprehensive range of services, including software development, mobile app development, and digital transformation solutions."
+    },
+    {
+      "action_name": "action_mission_and_values",
+      "conditions": "#mission_and_values",
+      "output_text": "Jaffa.Net Software is committed to delivering high-quality solutions that meet the needs of their clients. Their mission is to provide innovative solutions that drive business growth and success. They value their clients' trust and strive to build long-lasting relationships."
+    },
+    {
+      "action_name": "action_services_offered",
+      "conditions": "#services_offered",
+      "output_text": "Jaffa.Net Software offers a range of services, including software development, mobile app development, digital transformation solutions, banking solutions, ERP solutions, Web3 and Blockchain services and solutions, UI/UX design, and mobile app optimization."
+    },
+    {
+      "action_name": "action_contact_details",
+      "conditions": "#contact_details",
+      "output_text": "You can contact us at info@i-jaffa.net or +972-2-241-2020/+972-599-296106. Our address is [Insert address]."
+    },
+    {
+      "action_name": "action_careers",
+      "conditions": "#careers",
+      "output_text": "Jaffa.Net Software is always looking for talented individuals to join their team. They offer a range of career opportunities, including software development, project management, and sales. If you are interested in joining their team, please visit their website to learn more."
+    },
+    {
+      "action_name": "action_cookie_policy",
+      "conditions": "#cookie_policy",
+      "output_text": "Jaffa.Net Software uses cookies to provide a better user experience on their website. They use cookies to support user activities, such as maintaining session information and providing contextual content. They also use cookies to compile aggregate data about site traffic and site interaction. If you have any questions or concerns about their cookie policy, please contact them directly."
+    }
+  ],
+  "counterexamples": [],
+  "learning_opt_out": true,
+  "language": "en",
+  "description": "I'm an IBM Watson Assistant for Jaffa.Net Software",
+  "name": "Jaffa.Net Software"
+}

@@ -1,0 +1,140 @@
+[
+    {
+        "intent": "company_history",
+        "description": "Information about the company's background and history",
+        "examples": [
+            {
+                "text": "What is the history of your company?"
+            },
+            {
+                "text": "When was the company founded?"
+            },
+            {
+                "text": "How did your company start?"
+            },
+            {
+                "text": "Tell me about the company's founding."
+            },
+            {
+                "text": "Can you provide an overview of the company's background?"
+            },
+            {
+                "text": "Where did the company originate?"
+            },
+            {
+                "text": "What was the inspiration behind starting the company?"
+            }
+        ]
+    },
+    {
+        "intent": "company_overview",
+        "description": "General overview of the company, including its purpose, products, or services",
+        "examples": [
+            {
+                "text": "Give me an overview of your company."
+            },
+            {
+                "text": "What does your company do?"
+            },
+            {
+                "text": "Can you describe your company?"
+            },
+            {
+                "text": "What are your company's main products or services?"
+            },
+            {
+                "text": "What is your company's main focus?"
+            },
+            {
+                "text": "Can you tell me more about your company?"
+            }
+        ]
+    },
+    {
+        "intent": "mission_and_values",
+        "description": "Information about the company's mission and the values it adheres to",
+        "examples": [
+            {
+                "text": "What is your company's mission?"
+            },
+            {
+                "text": "What values does your company follow?"
+            },
+            {
+                "text": "What principles guide your company?"
+            },
+            {
+                "text": "Can you share your company's mission statement?"
+            },
+            {
+                "text": "What does your company stand for?"
+            },
+            {
+                "text": "How does your company align with its values?"
+            }
+        ]
+    },
+    {
+        "intent": "services_offered",
+        "description": "Details of services provided by the company",
+        "examples": [
+            {
+                "text": "What services do you provide?"
+            },
+            {
+                "text": "Tell me about your solutions."
+            },
+            {
+                "text": "What do you offer?"
+            },
+            {
+                "text": "Can you list your services?"
+            },
+            {
+                "text": "What can you help me with?"
+            }
+        ]
+    },
+    {
+        "intent": "contact_details",
+        "description": "Contact information for the company",
+        "examples": [
+            {
+                "text": "How can I contact you?"
+            },
+            {
+                "text": "What is your email or phone number?"
+            },
+            {
+                "text": "Can I get your address?"
+            },
+            {
+                "text": "Where are you located?"
+            },
+            {
+                "text": "How do I reach customer support?"
+            }
+        ]
+    },
+    {
+        "intent": "careers",
+        "description": "Information about careers and job opportunities",
+        "examples": [
+            {
+                "text": "Do you have job openings?"
+            },
+            {
+                "text": "How can I apply for a job?"
+            },
+            {
+                "text": "Are you hiring?"
+            },
+            {
+                "text": "What positions are available?"
+            },
+            {
+                "text": "Where can I submit my resume?"
+            }
+        ]
+    }
+]

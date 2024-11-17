@@ -1,0 +1,68 @@
+[
+    {
+        "intent": "greeting",
+        "description": "User greets the assistant",
+        "examples": [
+            {
+                "text": "Hello"
+            },
+            {
+                "text": "Hi"
+            },
+            {
+                "text": "Hey there"
+            },
+            {
+                "text": "Good morning"
+            },
+            {
+                "text": "Good afternoon"
+            },
+            {
+                "text": "Good evening"
+            }
+        ]
+    },
+    {
+        "intent": "thanks",
+        "description": "User thanks the assistant",
+        "examples": [
+            {
+                "text": "Thank you"
+            },
+            {
+                "text": "Thanks"
+            },
+            {
+                "text": "Much appreciated"
+            },
+            {
+                "text": "I appreciate it"
+            },
+            {
+                "text": "Thanks a lot"
+            }
+        ]
+    },
+    {
+        "intent": "goodbye",
+        "description": "User says goodbye",
+        "examples": [
+            {
+                "text": "Goodbye"
+            },
+            {
+                "text": "See you later"
+            },
+            {
+                "text": "Bye"
+            },
+            {
+                "text": "Catch you later"
+            },
+            {
+                "text": "Take care"
+            }
+        ]
+    }
+]
