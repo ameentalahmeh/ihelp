@@ -20,7 +20,6 @@ SERVICE_URL = os.getenv("ASSISTANT_URL")  # Fetch from .env file
 # Check if environment variables are loaded correctly
 if not API_KEY or not SERVICE_URL:
     st.error("IBM API Key or Service URL not set in the environment variables.")
-    st.error("IBM API Key or Service URL not set.")
     exit(1)
 
 # Setup the authenticator and Watson Assistant client
@@ -53,7 +52,6 @@ def list_workspaces():
         return formatted_workspaces
     except Exception as e:
         log.error(f"Error listing workspaces: {e}")
-        st.error(f"Failed to retrieve workspaces")
         return []
 
 
@@ -73,7 +71,6 @@ def delete_workspace(workspace_id: str):
         return True
     except Exception as e:
         log.error(f"Error deleting workspace {workspace_id}: {e}")
-        st.error(f"Failed to delete workspace")
         return False
 
 

@@ -9,6 +9,8 @@ from utils.scraper import (
     save_summary_markdown,
 )
 from utils.ibm_waston import (
+    list_workspaces,
+    delete_workspace,
     create_workspace,
     get_intents_and_actions,
     generate_intents_and_actions,
@@ -68,6 +70,38 @@ def show_workspace_download_buttons(workspace_name):
             file_name=f"{filename}.json",
             mime="application/json",
         )
+
+
+def manage_delete_workspace():
+    """
+    Manage workspace deletion if the maximum workspace limit is exceeded.
+    """
+    try:
+        workspaces = list_workspaces()
+
+        if workspaces:
+            sorted_workspaces = sorted(workspaces, key=lambda ws: ws.get("created", ""))
+
+            # Get the Latest workspace (first in sorted list)
+            oldest_workspace = sorted_workspaces[4]
+            selected_workspace_id = oldest_workspace["id"]
+            selected_workspace_name = oldest_workspace["name"]
+
+            with st.spinner(f"Deleting workspace: {selected_workspace_name}..."):
+                try:
+                    delete_workspace(selected_workspace_id)
+                    st.success(
+                        f"Latest workspace '{selected_workspace_name}' deleted successfully!"
+                    )
+                    st.rerun()
+                except Exception as e:
+                    log.error(f"Failed to delete workspace: {e}")
+                    st.error(
+                        f"An error occurred while deleting the workspace '{selected_workspace_name}'."
+                    )
+    except Exception as e:
+        log.error(f"Error in managing workspace deletion: {e}")
+        st.error("An error occurred while trying to manage workspace deletion.")
 
 
 def main():
@@ -146,7 +180,11 @@ def main():
 
         except Exception as e:
             log.error(f"An error occurred: {e}")
-            st.error("Error occurred during processing")
+            st.error(e.message)
+
+            # Check if maximum workspaces limit exceeded
+            if "Maximum workspaces limit exceeded" in str(e):
+                manage_delete_workspace()
 
 
 if __name__ == "__main__":
