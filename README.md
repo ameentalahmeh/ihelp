@@ -69,7 +69,7 @@ iHelp uses IBM Watson AI, TogetherAI, and Llama 3.2 to generate:
 - Outputs all data in **JSON format**.
 
 ### **Step 4: Download and Update**
-Export your workspace as a `JSON` file, update it, and redeploy it to your assistant—you're all set!
+Export your Workspace JSON file, update it, and redeploy it to your assistant—you're all set!
 
 ## **Getting Started**
 
