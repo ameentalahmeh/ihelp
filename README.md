@@ -1,7 +1,5 @@
 # iHelp
 
-AI assistant that adapts to any business, automating tasks and providing seamless customer support.
-
 ## Overview
 
 iHelp is a fast and intuitive platform designed to help businesses create AI-powered customer support assistants with ease.
