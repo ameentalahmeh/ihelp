@@ -1,7 +1,5 @@
 # iHelp
 
-## Overview
-
 iHelp is a fast and intuitive platform designed to help businesses create AI-powered customer support assistants with ease.
 
 Built on **IBM Watson AI technology** and **TogetherAI**, iHelp enables businesses to:
